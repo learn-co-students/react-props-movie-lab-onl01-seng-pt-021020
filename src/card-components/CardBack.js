@@ -17,15 +17,16 @@ export default class CardBack extends Component {
 		return <h4>No Rating Found</h4>;
 	};
 
+
   render() {
-		return (
-			<div className="card-back">
-				<h3 className="title">{this.props.title}</h3>
-				<span />
-				{this.generateRatingElement()}
-				<span />
-				<h5 className="genres">{this.props.genres.join(', ')}</h5>
-			</div>
-		);
-	}
+    return (
+      <div className="card-back">
+        <h3 className="title">{this.props.title}</h3>
+        <span />
+        {this.generateRatingElement()}
+        <span />
+        <h5 className="genres">{this.props.genres.join(', ')}</h5>
+      </div>
+    )
+  }
 }
